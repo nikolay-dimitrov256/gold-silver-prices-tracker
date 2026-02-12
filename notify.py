@@ -12,7 +12,6 @@ def send_message(token, chat_id, message):
         'text': message
     }
     resonse = requests.post(url, json=params)
-    print(resonse.json())
 
 
 def notify(token, chat_id):
