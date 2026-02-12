@@ -11,9 +11,9 @@ def send_message(token, chat_id, message):
         'chat_id': chat_id,
         'text': message
     }
-    resonse = requests.post(url, json=params)
+    response = requests.post(url, json=params)
 
-    data = resonse.json()
+    data = response.json()
     print(data.get('ok'))
 
 
