@@ -13,6 +13,9 @@ def send_message(token, chat_id, message):
     }
     resonse = requests.post(url, json=params)
 
+    data = resonse.json()
+    print(data.get('ok'))
+
 
 def notify(token, chat_id):
     global_prices = get_gold_and_silver_prices()
