@@ -1,8 +1,8 @@
 name: Track Gold and Silver prices, and notify
 
 on:
-  schedule:
-    - cron: "0 4-22 * * 1-5"
+  # schedule:
+    # - cron: "0 4-22 * * 1-5"
   workflow_dispatch:
 
 jobs:
